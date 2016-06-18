@@ -17,7 +17,7 @@ class Calculadora {
 		return $a + $b;
 	}
 
-/** hahaha **/
+/** zeeehahaha **/
 	/**
 	 * Realiza la resta de dos números
 	 * @param number $a
