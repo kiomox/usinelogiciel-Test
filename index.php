@@ -16,7 +16,7 @@ $contacts = $db->all();
 
 <html>
 <head>
-    <title>PHP-Apache-Mysql-Sample 示例 - DaoCloud</title>
+    <title>PHP-Apache-Mysql-Sample - DaoCloud</title>
 
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
@@ -47,16 +47,16 @@ $contacts = $db->all();
 <div class="container">
     <div class="content">
         <h1>
-            PHP-Apache-Mysql-Sample 示例
+            PHP-Apache-Mysql-Sample
         </h1>
         <table class="table">
-            <caption>通讯录</caption>
+            <caption>Contacts</caption>
             <thead>
             <tr>
                 <th>#</th>
-                <th>姓名</th>
-                <th>电话</th>
-                <th>操作</th>
+                <th>First Name</th>
+                <th>Phone Number</th>
+                <th>Operation</th>
             </tr>
             </thead>
             <tbody>
@@ -67,7 +67,7 @@ $contacts = $db->all();
                     <td><?php echo $contact['name'] ?></td>
                     <td><?php echo $contact['phone'] ?></td>
                     <td>
-                        <a href="index.php?delete=<?php echo $contact['id'] ?>">删除</a>
+                        <a href="index.php?delete=<?php echo $contact['id'] ?>">Delete</a>
                     </td>
                 </tr>
             <?php
@@ -78,14 +78,14 @@ $contacts = $db->all();
         <div class="text-left">
             <form method="post">
                 <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="姓名">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="First Name">
                 </div>
                 <div class="form-group">
-                    <label for="phone">号码</label>
-                    <input type="text" name="phone" class="form-control" id="phone" placeholder="号码">
+                    <label for="phone">Number</label>
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="06-XX-XX-XX">
                 </div>
-                <button type="submit" class="btn btn-success">新增</button>
+                <button type="submit" class="btn btn-success">     New     </button>
             </form>
         </div>
     </div>
